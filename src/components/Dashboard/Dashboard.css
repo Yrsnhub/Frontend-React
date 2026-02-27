@@ -1,0 +1,127 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  .dashboard-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 20px;
+    height: 60px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+  }
+  
+  .nav-logo {
+    color: #1877f2;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .nav-logout-btn {
+    background-color: #e4e6eb;
+    color: #050505;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-logout-btn:hover {
+    background-color: #d8dadf;
+  }
+  
+  .main-feed {
+    max-width: 680px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  
+  .feed-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1877f2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #050505;
+    margin: 0 0 2px 0;
+  }
+  
+  .timestamp {
+    font-size: 13px;
+    color: #65676b;
+    margin: 0;
+  }
+  
+  .card-body {
+    padding-top: 5px;
+  }
+  
+  .body-text {
+    font-size: 15px;
+    color: #050505;
+    margin-bottom: 15px;
+  }
+  
+  .action-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .action-button:hover {
+    background-color: #166fe5;
+  }
+  
+  .secret-box {
+    margin-top: 15px;
+    background-color: #e7f3ff;
+    color: #1877f2;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+  }

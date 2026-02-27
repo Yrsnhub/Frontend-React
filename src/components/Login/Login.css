@@ -1,69 +1,86 @@
 /* Login.css */
 
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Matches the Dashboard background */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
 .login-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 30px 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  .login-title {
-    margin-bottom: 20px;
-    color: #333333;
-  }
-  
-  .login-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  
-  .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555555;
-    font-size: 14px;
-  }
-  
-  .login-input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid #cccccc;
-    font-size: 14px;
-    transition: border-color 0.3s ease;
-  }
-  
-  .login-input:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
-  }
-  
-  .login-button {
-    padding: 12px;
-    margin-top: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .login-button:hover {
-    background-color: #0056b3;
-  }
+  width: 100%;
+  max-width: 396px; /* Classic login box width */
+  background-color: #ffffff;
+  padding: 24px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-title {
+  color: #1877f2; /* Facebook Blue */
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+/* Hiding the labels visually, but keeping them in the HTML for accessibility. 
+   We will rely on input placeholders for the clean aesthetic. */
+.input-group label {
+  display: none;
+}
+
+.login-input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 17px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #1d2129;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.login-button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-button:hover {
+  background-color: #166fe5;
+}
+
+.error-text {
+  color: #f02849;
+  font-size: 14px;
+  margin-bottom: 15px;
+  background-color: #ffebe8;
+  border: 1px solid #f02849;
+  padding: 8px;
+  border-radius: 4px;
+}
