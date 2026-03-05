@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css'; // Make sure to import the CSS!
+import './Login.css'; 
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -13,12 +13,14 @@ const Login = () => {
     e.preventDefault(); 
     
     // --- HARDCODED CREDENTIALS ---
+    // Pwede ra nimo ni ilisan puhon kung naa nay database
     const correctEmail = 'admin@example.com';
     const correctPassword = 'password123';
 
     if (email === correctEmail && password === correctPassword) {
       console.log('Login successful!');
       setError(''); 
+      // Redirect padung sa dashboard
       navigate('/dashboard'); 
     } else {
       setError('Invalid email or password. Please try again.');
@@ -30,19 +32,20 @@ const Login = () => {
     <div className="login-wrapper">
       <div className="login-container">
         <h2 className="login-title">Welcome To Dustin</h2>
+        <p className="login-subtitle">Please sign in to continue</p>
         
-        {error && <p className="error-text">{error}</p>}
+        {error && <div className="error-message">{error}</div>}
 
         <form onSubmit={handleSubmit} className="login-form">
           
           <div className="input-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email Address</label>
             <input
               type="email"
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email address"
+              placeholder="admin@example.com"
               required
               className="login-input"
             />
@@ -55,7 +58,7 @@ const Login = () => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Password"
+              placeholder="••••••••"
               required
               className="login-input"
             />
